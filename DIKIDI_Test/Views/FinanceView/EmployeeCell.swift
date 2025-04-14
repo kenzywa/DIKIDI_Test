@@ -17,7 +17,7 @@ struct EmployeeCell: View {
                     .frame(maxWidth: 36, maxHeight: 36)
                 InformationEmployeeView(listModel: listModel)
             }
-            Spacer()
+//            Spacer()
             
             SalaryEmployeeView(listModel: listModel)
             }
