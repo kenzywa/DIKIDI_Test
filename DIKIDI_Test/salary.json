@@ -1,0 +1,1099 @@
+{
+  "error": {
+    "code": 0,
+    "message": null
+  },
+  "data": {
+    "list": [
+      {
+        "employee": {
+          "id": "3625973",
+          "icon": "https://dikidi.net/assets/images/staff.png",
+          "fullname": "лл лл",
+          "status_id": "1",
+          "status_title": "Активен",
+          "category_id": "13",
+          "category_title": "Администратор",
+          "salary_scheme_id": "280598"
+        },
+        "payroll_balance_begin": "0",
+        "overpayment_begin": null,
+        "payroll_balance_end": "522.44",
+        "overpayment_end": null,
+        "payroll": "522.44",
+        "deduction": "0.00",
+        "paid": "0",
+        "payable": "522.44",
+        "balance": "522.44"
+      },
+      {
+        "employee": {
+          "id": "2357278",
+          "icon": "https://dikidi.net/assets/images/staff.png",
+          "fullname": "Исакова Анна",
+          "status_id": "1",
+          "status_title": "Активен",
+          "category_id": "11",
+          "category_title": "Бровист",
+          "salary_scheme_id": "281803"
+        },
+        "payroll_balance_begin": "0",
+        "overpayment_begin": null,
+        "payroll_balance_end": "0",
+        "overpayment_end": null,
+        "payroll": "25041.53",
+        "deduction": "-17363.00",
+        "paid": "7678.53",
+        "payable": "0",
+        "balance": "0"
+      },
+      {
+        "employee": {
+          "id": "3247980",
+          "icon": "https://dikidi.net/assets/images/staff.png",
+          "fullname": "мипа дима",
+          "status_id": "1",
+          "status_title": "Активен",
+          "category_id": "13",
+          "category_title": "Администратор",
+          "salary_scheme_id": "281859"
+        },
+        "payroll_balance_begin": "0",
+        "overpayment_begin": null,
+        "payroll_balance_end": "0",
+        "overpayment_end": null,
+        "payroll": "8130.03",
+        "deduction": "-1000.00",
+        "paid": "7130.03",
+        "payable": "0",
+        "balance": "0"
+      },
+      {
+        "employee": {
+          "id": "3632809",
+          "icon": "https://f2.dikidi.net/c16/v15094/5tq48gakts.jpg?size=m",
+          "fullname": "Моср",
+          "status_id": "1",
+          "status_title": "Активен",
+          "category_id": "13",
+          "category_title": "Администратор",
+          "salary_scheme_id": "291012"
+        },
+        "payroll_balance_begin": "0",
+        "overpayment_begin": null,
+        "payroll_balance_end": "0",
+        "overpayment_end": null,
+        "payroll": "0.00",
+        "deduction": "0.00",
+        "paid": "0",
+        "payable": "0",
+        "balance": "0"
+      },
+      {
+        "employee": {
+          "id": "3830870",
+          "icon": "https://f2.dikidi.net/c17/v16444/66e0ip16hm.jpg?size=m",
+          "fullname": "&quot;&lt;img src=&#039;1&#039; onerror=alert(2)&gt; &quot;&lt;img src=&#039;1&#039; onerror=alert(1)&gt;",
+          "status_id": "1",
+          "status_title": "Активен",
+          "category_id": "1",
+          "category_title": "Косметолог",
+          "salary_scheme_id": "292181"
+        },
+        "payroll_balance_begin": "0",
+        "overpayment_begin": null,
+        "payroll_balance_end": "0",
+        "overpayment_end": null,
+        "payroll": "0.00",
+        "deduction": "0.00",
+        "paid": "0",
+        "payable": "0",
+        "balance": "0"
+      },
+      {
+        "employee": {
+          "id": "3770998",
+          "icon": "https://dikidi.net/assets/images/staff.png",
+          "fullname": "Дизайнер Никита",
+          "status_id": "1",
+          "status_title": "Активен",
+          "category_id": "8",
+          "category_title": "Мастер",
+          "salary_scheme_id": "285334"
+        },
+        "payroll_balance_begin": "0",
+        "overpayment_begin": null,
+        "payroll_balance_end": "-220",
+        "overpayment_end": null,
+        "payroll": "75723.50",
+        "deduction": "-39726.00",
+        "paid": "36217.50",
+        "payable": "0",
+        "balance": "-220"
+      },
+      {
+        "employee": {
+          "id": "1711",
+          "icon": "https://f1.dikidi.net/c3/v2127/51pbnlddcj.jpg?size=m",
+          "fullname": "Грин Рейчел",
+          "status_id": "1",
+          "status_title": "Активен",
+          "category_id": "1",
+          "category_title": "Косметолог",
+          "salary_scheme_id": "281792"
+        },
+        "payroll_balance_begin": "0",
+        "overpayment_begin": null,
+        "payroll_balance_end": "-464.40",
+        "overpayment_end": null,
+        "payroll": "238636.50",
+        "deduction": "-3369.00",
+        "paid": "235731.90",
+        "payable": "0",
+        "balance": "-464.40"
+      },
+      {
+        "employee": {
+          "id": "3774573",
+          "icon": "https://dikidi.net/assets/images/staff.png",
+          "fullname": "Тест",
+          "status_id": "1",
+          "status_title": "Активен",
+          "category_id": "13",
+          "category_title": "Администратор",
+          "salary_scheme_id": "285331"
+        },
+        "payroll_balance_begin": "0",
+        "overpayment_begin": null,
+        "payroll_balance_end": "-1000",
+        "overpayment_end": null,
+        "payroll": "28041.53",
+        "deduction": "-18363.00",
+        "paid": "10678.53",
+        "payable": "0",
+        "balance": "-1000"
+      },
+      {
+        "employee": {
+          "id": "3692014",
+          "icon": "https://dikidi.net/assets/images/staff.png",
+          "fullname": "Тестович Данил",
+          "status_id": "1",
+          "status_title": "Активен",
+          "category_id": "13",
+          "category_title": "Администратор",
+          "salary_scheme_id": "281842"
+        },
+        "payroll_balance_begin": "0",
+        "overpayment_begin": null,
+        "payroll_balance_end": "-6097",
+        "overpayment_end": null,
+        "payroll": "42888.00",
+        "deduction": "-48965.00",
+        "paid": "20.00",
+        "payable": "0",
+        "balance": "-6097"
+      },
+      {
+        "employee": {
+          "id": "1712",
+          "icon": "https://dikidi.net/assets/images/staff.png",
+          "fullname": "Анна",
+          "status_id": "1",
+          "status_title": "Активен",
+          "category_id": "2",
+          "category_title": "Массажист",
+          "salary_scheme_id": "281793"
+        },
+        "payroll_balance_begin": "0",
+        "overpayment_begin": null,
+        "payroll_balance_end": "-8026",
+        "overpayment_end": null,
+        "payroll": "18660.00",
+        "deduction": "-6065.00",
+        "paid": "20621.00",
+        "payable": "0",
+        "balance": "-8026"
+      },
+      {
+        "employee": {
+          "id": "92778",
+          "icon": "https://f1.dikidi.net/c3/v2127/340kcg75so.jpg?size=m",
+          "fullname": "Геллер Моника",
+          "status_id": "1",
+          "status_title": "Активен",
+          "category_id": "1",
+          "category_title": "Косметолог",
+          "salary_scheme_id": "281830"
+        },
+        "payroll_balance_begin": "0",
+        "overpayment_begin": null,
+        "payroll_balance_end": "-9138",
+        "overpayment_end": null,
+        "payroll": "80995.36",
+        "deduction": "-3044.00",
+        "paid": "87089.36",
+        "payable": "0",
+        "balance": "-9138"
+      },
+      {
+        "employee": {
+          "id": "836351",
+          "icon": "https://f1.dikidi.net/c1/v487/7tenjg5q6q.jpg?size=m",
+          "fullname": "Александров Вадим",
+          "status_id": "1",
+          "status_title": "Активен",
+          "category_id": "2",
+          "category_title": "Массажист",
+          "salary_scheme_id": "281831"
+        },
+        "payroll_balance_begin": "0",
+        "overpayment_begin": null,
+        "payroll_balance_end": "-25553.39",
+        "overpayment_end": null,
+        "payroll": "5825.00",
+        "deduction": "0.00",
+        "paid": "31378.39",
+        "payable": "0",
+        "balance": "-25553.39"
+      },
+      {
+        "employee": {
+          "id": "1274357",
+          "icon": "https://dikidi.net/assets/images/staff.png",
+          "fullname": "Pudov",
+          "status_id": "1",
+          "status_title": "Активен",
+          "category_id": "8",
+          "category_title": "Мастер",
+          "salary_scheme_id": "281838"
+        },
+        "payroll_balance_begin": "0",
+        "overpayment_begin": null,
+        "payroll_balance_end": "-30000",
+        "overpayment_end": null,
+        "payroll": "0.00",
+        "deduction": "0.00",
+        "paid": "30000.00",
+        "payable": "0",
+        "balance": "-30000"
+      },
+      {
+        "employee": {
+          "id": "2142436",
+          "icon": "https://f1.dikidi.net/c9/v8206/2u0hs0vpf5.jpg?size=m",
+          "fullname": "Bing Chandler",
+          "status_id": "1",
+          "status_title": "Активен",
+          "category_id": "6",
+          "category_title": "Мастер ногтевого сервиса",
+          "salary_scheme_id": "283029"
+        },
+        "payroll_balance_begin": "0",
+        "overpayment_begin": null,
+        "payroll_balance_end": "-66899",
+        "overpayment_end": null,
+        "payroll": "0.00",
+        "deduction": "0.00",
+        "paid": "66899.00",
+        "payable": "0",
+        "balance": "-66899"
+      },
+      {
+        "employee": {
+          "id": "1517899",
+          "icon": "https://f1.dikidi.net/c2/v1605/1lchoi2m4p.jpg?size=m",
+          "fullname": "Skywalker Luke",
+          "status_id": "1",
+          "status_title": "Активен",
+          "category_id": "8",
+          "category_title": "Мастер",
+          "salary_scheme_id": "280657"
+        },
+        "payroll_balance_begin": "0",
+        "overpayment_begin": null,
+        "payroll_balance_end": "-349639.87",
+        "overpayment_end": null,
+        "payroll": "196598.13",
+        "deduction": "-535353.00",
+        "paid": "10885.00",
+        "payable": "0",
+        "balance": "-349639.87"
+      },
+      {
+        "employee": {
+          "id": "2273418",
+          "icon": "https://dikidi.net/assets/images/staff.png",
+          "fullname": "Dart",
+          "status_id": "1",
+          "status_title": "Активен",
+          "category_id": "15",
+          "category_title": "Специалист",
+          "salary_scheme_id": null
+        },
+        "payroll_balance_begin": "0",
+        "overpayment_begin": null,
+        "payroll_balance_end": "126817",
+        "overpayment_end": null,
+        "payroll": "140500.00",
+        "deduction": "-13683.00",
+        "paid": "0",
+        "payable": "126817",
+        "balance": "126817"
+      },
+      {
+        "employee": {
+          "id": "2591382",
+          "icon": "https://dikidi.net/assets/images/staff.png",
+          "fullname": "Баг Доступ Тест",
+          "status_id": "1",
+          "status_title": "Активен",
+          "category_id": "14",
+          "category_title": "Врач",
+          "salary_scheme_id": null
+        },
+        "payroll_balance_begin": "0",
+        "overpayment_begin": null,
+        "payroll_balance_end": "17363",
+        "overpayment_end": null,
+        "payroll": "25041.53",
+        "deduction": "0.00",
+        "paid": "7678.53",
+        "payable": "17363",
+        "balance": "17363"
+      },
+      {
+        "employee": {
+          "id": "3533165",
+          "icon": "https://dikidi.net/assets/images/staff.png",
+          "fullname": "Ломоносова Жозефина",
+          "status_id": "1",
+          "status_title": "Активен",
+          "category_id": "13",
+          "category_title": "Администратор",
+          "salary_scheme_id": null
+        },
+        "payroll_balance_begin": "0",
+        "overpayment_begin": null,
+        "payroll_balance_end": "7678.53",
+        "overpayment_end": null,
+        "payroll": "25041.53",
+        "deduction": "-17363.00",
+        "paid": "0",
+        "payable": "7678.53",
+        "balance": "7678.53"
+      },
+      {
+        "employee": {
+          "id": "3775007",
+          "icon": "https://dikidi.net/assets/images/staff.png",
+          "fullname": "&#039;&quot;&gt;&lt;img src=x onerror=alert(&#039;123&#039;)&gt;${{&lt;%[%&#039;&quot;}}%\\\\. &#039;&quot;&gt;&lt;img src=x onerror=alert(&#039;123&#039;)&gt;${{&lt;%[%&#039;&quot;}}%\\\\.",
+          "status_id": "1",
+          "status_title": "Активен",
+          "category_id": "13",
+          "category_title": "Администратор",
+          "salary_scheme_id": null
+        },
+        "payroll_balance_begin": "0",
+        "overpayment_begin": null,
+        "payroll_balance_end": "5555",
+        "overpayment_end": null,
+        "payroll": "5555.00",
+        "deduction": "0.00",
+        "paid": "0",
+        "payable": "5555",
+        "balance": "5555"
+      },
+      {
+        "employee": {
+          "id": "3541711",
+          "icon": "https://dikidi.net/assets/images/staff.png",
+          "fullname": "мик лог",
+          "status_id": "1",
+          "status_title": "Активен",
+          "category_id": "11",
+          "category_title": "Бровист",
+          "salary_scheme_id": null
+        },
+        "payroll_balance_begin": "0",
+        "overpayment_begin": null,
+        "payroll_balance_end": "597",
+        "overpayment_end": null,
+        "payroll": "1261.03",
+        "deduction": "0.00",
+        "paid": "664.03",
+        "payable": "597",
+        "balance": "597"
+      },
+      {
+        "employee": {
+          "id": "3620106",
+          "icon": "https://dikidi.net/assets/images/staff.png",
+          "fullname": "тто ото",
+          "status_id": "1",
+          "status_title": "Активен",
+          "category_id": "4",
+          "category_title": "Визажист",
+          "salary_scheme_id": null
+        },
+        "payroll_balance_begin": "0",
+        "overpayment_begin": null,
+        "payroll_balance_end": "555",
+        "overpayment_end": null,
+        "payroll": "555.00",
+        "deduction": "0.00",
+        "paid": "0",
+        "payable": "555",
+        "balance": "555"
+      },
+      {
+        "employee": {
+          "id": "3652672",
+          "icon": "https://dikidi.net/assets/images/staff.png",
+          "fullname": "Селиверова (Солина) Анна",
+          "status_id": "1",
+          "status_title": "Активен",
+          "category_id": "11",
+          "category_title": "Бровист",
+          "salary_scheme_id": null
+        },
+        "payroll_balance_begin": "0",
+        "overpayment_begin": null,
+        "payroll_balance_end": "333",
+        "overpayment_end": null,
+        "payroll": "555.00",
+        "deduction": "-222.00",
+        "paid": "0",
+        "payable": "333",
+        "balance": "333"
+      },
+      {
+        "employee": {
+          "id": "2366808",
+          "icon": "https://dikidi.net/assets/images/staff.png",
+          "fullname": "Мейер Виолетта",
+          "status_id": "1",
+          "status_title": "Активен",
+          "category_id": "6",
+          "category_title": "Мастер ногтевого сервиса",
+          "salary_scheme_id": null
+        },
+        "payroll_balance_begin": "0",
+        "overpayment_begin": null,
+        "payroll_balance_end": "0",
+        "overpayment_end": null,
+        "payroll": "0.00",
+        "deduction": "0.00",
+        "paid": "0",
+        "payable": "0",
+        "balance": "0"
+      },
+      {
+        "employee": {
+          "id": "2470909",
+          "icon": "https://dikidi.net/assets/images/staff.png",
+          "fullname": "Егорова Анастасия",
+          "status_id": "1",
+          "status_title": "Активен",
+          "category_id": "16",
+          "category_title": "Преподаватель",
+          "salary_scheme_id": null
+        },
+        "payroll_balance_begin": "0",
+        "overpayment_begin": null,
+        "payroll_balance_end": "0",
+        "overpayment_end": null,
+        "payroll": "11564.45",
+        "deduction": "-5000.00",
+        "paid": "6564.45",
+        "payable": "0",
+        "balance": "0"
+      },
+      {
+        "employee": {
+          "id": "2471275",
+          "icon": "https://f2.dikidi.net/c17/v16421/5ih7hjbb1m.jpg?size=m",
+          "fullname": "Валентин",
+          "status_id": "1",
+          "status_title": "Активен",
+          "category_id": "2",
+          "category_title": "Массажист",
+          "salary_scheme_id": null
+        },
+        "payroll_balance_begin": "0",
+        "overpayment_begin": null,
+        "payroll_balance_end": "0",
+        "overpayment_end": null,
+        "payroll": "0.00",
+        "deduction": "0.00",
+        "paid": "0",
+        "payable": "0",
+        "balance": "0"
+      },
+      {
+        "employee": {
+          "id": "2671712",
+          "icon": "https://dikidi.net/assets/images/staff.png",
+          "fullname": "Лопар",
+          "status_id": "1",
+          "status_title": "Активен",
+          "category_id": "11",
+          "category_title": "Бровист",
+          "salary_scheme_id": null
+        },
+        "payroll_balance_begin": "0",
+        "overpayment_begin": null,
+        "payroll_balance_end": "0",
+        "overpayment_end": null,
+        "payroll": "0.00",
+        "deduction": "0.00",
+        "paid": "0",
+        "payable": "0",
+        "balance": "0"
+      },
+      {
+        "employee": {
+          "id": "2680676",
+          "icon": "https://dikidi.net/assets/images/staff.png",
+          "fullname": "Test",
+          "status_id": "1",
+          "status_title": "Активен",
+          "category_id": "11",
+          "category_title": "Бровист",
+          "salary_scheme_id": null
+        },
+        "payroll_balance_begin": "0",
+        "overpayment_begin": null,
+        "payroll_balance_end": "0",
+        "overpayment_end": null,
+        "payroll": "0.00",
+        "deduction": "0.00",
+        "paid": "0",
+        "payable": "0",
+        "balance": "0"
+      },
+      {
+        "employee": {
+          "id": "2847460",
+          "icon": "https://dikidi.net/assets/images/staff.png",
+          "fullname": "Тихон",
+          "status_id": "1",
+          "status_title": "Активен",
+          "category_id": "2",
+          "category_title": "Массажист",
+          "salary_scheme_id": null
+        },
+        "payroll_balance_begin": "0",
+        "overpayment_begin": null,
+        "payroll_balance_end": "0",
+        "overpayment_end": null,
+        "payroll": "0.00",
+        "deduction": "0.00",
+        "paid": "0",
+        "payable": "0",
+        "balance": "0"
+      },
+      {
+        "employee": {
+          "id": "3001878",
+          "icon": "https://dikidi.net/assets/images/staff.png",
+          "fullname": "Оалаьа",
+          "status_id": "1",
+          "status_title": "Активен",
+          "category_id": "14",
+          "category_title": "Врач",
+          "salary_scheme_id": null
+        },
+        "payroll_balance_begin": "0",
+        "overpayment_begin": null,
+        "payroll_balance_end": "0",
+        "overpayment_end": null,
+        "payroll": "0.00",
+        "deduction": "0.00",
+        "paid": "0",
+        "payable": "0",
+        "balance": "0"
+      },
+      {
+        "employee": {
+          "id": "3210598",
+          "icon": "https://dikidi.net/assets/images/staff.png",
+          "fullname": "Про Про",
+          "status_id": "1",
+          "status_title": "Активен",
+          "category_id": "13",
+          "category_title": "Администратор",
+          "salary_scheme_id": null
+        },
+        "payroll_balance_begin": "0",
+        "overpayment_begin": null,
+        "payroll_balance_end": "0",
+        "overpayment_end": null,
+        "payroll": "0.00",
+        "deduction": "0.00",
+        "paid": "0",
+        "payable": "0",
+        "balance": "0"
+      },
+      {
+        "employee": {
+          "id": "3336496",
+          "icon": "https://dikidi.net/assets/images/staff.png",
+          "fullname": "vladimir",
+          "status_id": "1",
+          "status_title": "Активен",
+          "category_id": "14",
+          "category_title": "Врач",
+          "salary_scheme_id": null
+        },
+        "payroll_balance_begin": "0",
+        "overpayment_begin": null,
+        "payroll_balance_end": "0",
+        "overpayment_end": null,
+        "payroll": "0.00",
+        "deduction": "0.00",
+        "paid": "0",
+        "payable": "0",
+        "balance": "0"
+      },
+      {
+        "employee": {
+          "id": "3574742",
+          "icon": "https://dikidi.net/assets/images/staff.png",
+          "fullname": "Лимонов Федя",
+          "status_id": "1",
+          "status_title": "Активен",
+          "category_id": "13",
+          "category_title": "Администратор",
+          "salary_scheme_id": null
+        },
+        "payroll_balance_begin": "0",
+        "overpayment_begin": null,
+        "payroll_balance_end": "0",
+        "overpayment_end": null,
+        "payroll": "0.00",
+        "deduction": "0.00",
+        "paid": "0",
+        "payable": "0",
+        "balance": "0"
+      },
+      {
+        "employee": {
+          "id": "3582160",
+          "icon": "https://dikidi.net/assets/images/staff.png",
+          "fullname": "Антонов Олег",
+          "status_id": "1",
+          "status_title": "Активен",
+          "category_id": "2",
+          "category_title": "Массажист",
+          "salary_scheme_id": null
+        },
+        "payroll_balance_begin": "0",
+        "overpayment_begin": null,
+        "payroll_balance_end": "0",
+        "overpayment_end": null,
+        "payroll": "0.00",
+        "deduction": "0.00",
+        "paid": "0",
+        "payable": "0",
+        "balance": "0"
+      },
+      {
+        "employee": {
+          "id": "3626008",
+          "icon": "https://dikidi.net/assets/images/staff.png",
+          "fullname": "ррр",
+          "status_id": "1",
+          "status_title": "Активен",
+          "category_id": "13",
+          "category_title": "Администратор",
+          "salary_scheme_id": null
+        },
+        "payroll_balance_begin": "0",
+        "overpayment_begin": null,
+        "payroll_balance_end": "0",
+        "overpayment_end": null,
+        "payroll": "0.00",
+        "deduction": "0.00",
+        "paid": "0",
+        "payable": "0",
+        "balance": "0"
+      },
+      {
+        "employee": {
+          "id": "3824622",
+          "icon": "https://dikidi.net/assets/images/staff.png",
+          "fullname": "Прозорова Татьяна",
+          "status_id": "1",
+          "status_title": "Активен",
+          "category_id": "13",
+          "category_title": "Администратор",
+          "salary_scheme_id": null
+        },
+        "payroll_balance_begin": "0",
+        "overpayment_begin": null,
+        "payroll_balance_end": "0",
+        "overpayment_end": null,
+        "payroll": "0.00",
+        "deduction": "0.00",
+        "paid": "0",
+        "payable": "0",
+        "balance": "0"
+      },
+      {
+        "employee": {
+          "id": "3838163",
+          "icon": "https://dikidi.net/assets/images/staff.png",
+          "fullname": "Fffff 111111",
+          "status_id": "1",
+          "status_title": "Активен",
+          "category_id": "2",
+          "category_title": "Массажист",
+          "salary_scheme_id": null
+        },
+        "payroll_balance_begin": "0",
+        "overpayment_begin": null,
+        "payroll_balance_end": "0",
+        "overpayment_end": null,
+        "payroll": "0.00",
+        "deduction": "0.00",
+        "paid": "0",
+        "payable": "0",
+        "balance": "0"
+      },
+      {
+        "employee": {
+          "id": "3845386",
+          "icon": "https://dikidi.net/assets/images/staff.png",
+          "fullname": "тест перерыв",
+          "status_id": "1",
+          "status_title": "Активен",
+          "category_id": "4",
+          "category_title": "Визажист",
+          "salary_scheme_id": null
+        },
+        "payroll_balance_begin": "0",
+        "overpayment_begin": null,
+        "payroll_balance_end": "0",
+        "overpayment_end": null,
+        "payroll": "0.00",
+        "deduction": "0.00",
+        "paid": "0",
+        "payable": "0",
+        "balance": "0"
+      },
+      {
+        "employee": {
+          "id": "3903590",
+          "icon": "https://dikidi.net/assets/images/staff.png",
+          "fullname": "Анна",
+          "status_id": "1",
+          "status_title": "Активен",
+          "category_id": "4",
+          "category_title": "Визажист",
+          "salary_scheme_id": null
+        },
+        "payroll_balance_begin": "0",
+        "overpayment_begin": null,
+        "payroll_balance_end": "0",
+        "overpayment_end": null,
+        "payroll": "0",
+        "deduction": "0",
+        "paid": "0",
+        "payable": "0",
+        "balance": "0"
+      },
+      {
+        "employee": {
+          "id": "2514735",
+          "icon": "https://dikidi.net/assets/images/staff.png",
+          "fullname": "Права Тестовый",
+          "status_id": "1",
+          "status_title": "Активен",
+          "category_id": "13",
+          "category_title": "Администратор",
+          "salary_scheme_id": null
+        },
+        "payroll_balance_begin": "0",
+        "overpayment_begin": null,
+        "payroll_balance_end": "-0.10",
+        "overpayment_end": null,
+        "payroll": "0.00",
+        "deduction": "-0.10",
+        "paid": "0",
+        "payable": "-0.10",
+        "balance": "-0.10"
+      },
+      {
+        "employee": {
+          "id": "921403",
+          "icon": "https://dikidi.net/assets/images/staff.png",
+          "fullname": "Злой Чел - Негативный",
+          "status_id": "1",
+          "status_title": "Активен",
+          "category_id": "13",
+          "category_title": "Администратор",
+          "salary_scheme_id": null
+        },
+        "payroll_balance_begin": "0",
+        "overpayment_begin": null,
+        "payroll_balance_end": "-1",
+        "overpayment_end": null,
+        "payroll": "0.00",
+        "deduction": "0.00",
+        "paid": "1.00",
+        "payable": "0",
+        "balance": "-1"
+      },
+      {
+        "employee": {
+          "id": "3661534",
+          "icon": "https://dikidi.net/assets/images/staff.png",
+          "fullname": "Анжелика Иванова",
+          "status_id": "1",
+          "status_title": "Активен",
+          "category_id": "11",
+          "category_title": "Бровист",
+          "salary_scheme_id": null
+        },
+        "payroll_balance_begin": "0",
+        "overpayment_begin": null,
+        "payroll_balance_end": "-3.30",
+        "overpayment_end": null,
+        "payroll": "0.00",
+        "deduction": "-3.30",
+        "paid": "0",
+        "payable": "0",
+        "balance": "-3.30"
+      },
+      {
+        "employee": {
+          "id": "2010328",
+          "icon": "https://dikidi.net/assets/images/staff.png",
+          "fullname": "Vinilov Vanya",
+          "status_id": "1",
+          "status_title": "Активен",
+          "category_id": "2",
+          "category_title": "Массажист",
+          "salary_scheme_id": null
+        },
+        "payroll_balance_begin": "0",
+        "overpayment_begin": null,
+        "payroll_balance_end": "-20",
+        "overpayment_end": null,
+        "payroll": "0.00",
+        "deduction": "0.00",
+        "paid": "20.00",
+        "payable": "0",
+        "balance": "-20"
+      },
+      {
+        "employee": {
+          "id": "1773725",
+          "icon": "https://f1.dikidi.net/c3/v2066/46qggqrcbe.jpg?size=m",
+          "fullname": "Светлана",
+          "status_id": "1",
+          "status_title": "Активен",
+          "category_id": "9",
+          "category_title": "Специалист по эстетике тела",
+          "salary_scheme_id": null
+        },
+        "payroll_balance_begin": "0",
+        "overpayment_begin": null,
+        "payroll_balance_end": "-30",
+        "overpayment_end": null,
+        "payroll": "870.00",
+        "deduction": "0.00",
+        "paid": "900.00",
+        "payable": "0",
+        "balance": "-30"
+      },
+      {
+        "employee": {
+          "id": "3875199",
+          "icon": "https://dikidi.net/assets/images/staff.png",
+          "fullname": "Ekaterina",
+          "status_id": "1",
+          "status_title": "Активен",
+          "category_id": "13",
+          "category_title": "Администратор",
+          "salary_scheme_id": null
+        },
+        "payroll_balance_begin": "0",
+        "overpayment_begin": null,
+        "payroll_balance_end": "-100",
+        "overpayment_end": null,
+        "payroll": "0.00",
+        "deduction": "-50.00",
+        "paid": "50.00",
+        "payable": "0",
+        "balance": "-100"
+      },
+      {
+        "employee": {
+          "id": "3835645",
+          "icon": "https://f2.dikidi.net/c17/v16483/icpmijd075.jpg?size=m",
+          "fullname": "Изюмов1 Артемий1",
+          "status_id": "1",
+          "status_title": "Активен",
+          "category_id": "13",
+          "category_title": "Администратор",
+          "salary_scheme_id": null
+        },
+        "payroll_balance_begin": "0",
+        "overpayment_begin": null,
+        "payroll_balance_end": "-2220",
+        "overpayment_end": null,
+        "payroll": "0.00",
+        "deduction": "0.00",
+        "paid": "2220.00",
+        "payable": "0",
+        "balance": "-2220"
+      },
+      {
+        "employee": {
+          "id": "1933370",
+          "icon": "https://dikidi.net/assets/images/staff.png",
+          "fullname": "Master Danila",
+          "status_id": "1",
+          "status_title": "Активен",
+          "category_id": "11",
+          "category_title": "Бровист",
+          "salary_scheme_id": null
+        },
+        "payroll_balance_begin": "0",
+        "overpayment_begin": null,
+        "payroll_balance_end": "-3069",
+        "overpayment_end": null,
+        "payroll": "3600.00",
+        "deduction": "-6669.00",
+        "paid": "0",
+        "payable": "0",
+        "balance": "-3069"
+      },
+      {
+        "employee": {
+          "id": "3776432",
+          "icon": "https://f2.dikidi.net/c17/v16986/obmoe0hr8k.jpg?size=m",
+          "fullname": "П. Елена",
+          "status_id": "1",
+          "status_title": "Активен",
+          "category_id": "15",
+          "category_title": "Специалист",
+          "salary_scheme_id": null
+        },
+        "payroll_balance_begin": "0",
+        "overpayment_begin": null,
+        "payroll_balance_end": "-7962",
+        "overpayment_end": null,
+        "payroll": "0.00",
+        "deduction": "-222.00",
+        "paid": "7740.00",
+        "payable": "0",
+        "balance": "-7962"
+      },
+      {
+        "employee": {
+          "id": "2507989",
+          "icon": "https://dikidi.net/assets/images/staff.png",
+          "fullname": "Anya",
+          "status_id": "1",
+          "status_title": "Активен",
+          "category_id": "15",
+          "category_title": "Специалист",
+          "salary_scheme_id": null
+        },
+        "payroll_balance_begin": "0",
+        "overpayment_begin": null,
+        "payroll_balance_end": "-9556",
+        "overpayment_end": null,
+        "payroll": "5444.00",
+        "deduction": "0.00",
+        "paid": "15000.00",
+        "payable": "0",
+        "balance": "-9556"
+      },
+      {
+        "employee": {
+          "id": "2580742",
+          "icon": "https://dikidi.net/assets/images/staff.png",
+          "fullname": "Мария",
+          "status_id": "1",
+          "status_title": "Активен",
+          "category_id": "6",
+          "category_title": "Мастер ногтевого сервиса",
+          "salary_scheme_id": null
+        },
+        "payroll_balance_begin": "0",
+        "overpayment_begin": null,
+        "payroll_balance_end": "-10945",
+        "overpayment_end": null,
+        "payroll": "26472.11",
+        "deduction": "-30000.00",
+        "paid": "7417.11",
+        "payable": "0",
+        "balance": "-10945"
+      },
+      {
+        "employee": {
+          "id": "2479107",
+          "icon": "https://dikidi.net/assets/images/staff.png",
+          "fullname": "Павел",
+          "status_id": "1",
+          "status_title": "Активен",
+          "category_id": "13",
+          "category_title": "Администратор",
+          "salary_scheme_id": null
+        },
+        "payroll_balance_begin": "0",
+        "overpayment_begin": null,
+        "payroll_balance_end": "-100000",
+        "overpayment_end": null,
+        "payroll": "0.00",
+        "deduction": "0.00",
+        "paid": "100000.00",
+        "payable": "0",
+        "balance": "-100000"
+      }
+    ],
+    "categories": [
+      {
+        "count": 3,
+        "title": "Косметолог",
+        "title_many": "Косметологи",
+        "id": "1"
+      },
+      {
+        "count": 2,
+        "title": "Массажист",
+        "title_many": "Массажисты",
+        "id": "2"
+      },
+      {
+        "count": 3,
+        "title": "Мастер",
+        "title_many": "Мастера",
+        "id": "8"
+      },
+      {
+        "count": 1,
+        "title": "Мастер ногтевого сервиса",
+        "title_many": "Мастера ногтевого сервиса",
+        "id": "6"
+      },
+      {
+        "count": 1,
+        "title": "Бровист",
+        "title_many": "Бровисты",
+        "id": "11"
+      },
+      {
+        "count": 5,
+        "title": "Администратор",
+        "title_many": "Администраторы",
+        "id": "13"
+      }
+    ]
+  }
+}
+

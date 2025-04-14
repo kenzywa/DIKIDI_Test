@@ -1,0 +1,17 @@
+{
+  "error": {
+    "code": 0,
+    "message": null
+  },
+  "data": {
+    "payroll_balance_begin": "0",
+    "overpayment_begin": null,
+    "payroll_balance_end": "-471523.09",
+    "overpayment_end": null,
+    "payroll": "967521.67",
+    "deduction": "-746460.4",
+    "paid": "692584.36",
+    "balance": "-471523.09",
+    "payable": null
+  }
+}
