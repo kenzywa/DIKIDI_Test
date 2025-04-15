@@ -19,10 +19,8 @@ struct EmployeeCell: View {
                 .layoutPriority(1)
             
             Spacer(minLength: 0)
-            VStack(alignment:.trailing) {
-                SalaryEmployeeView(listModel: listModel)
-                    .frame(width:100)
-            }
+            SalaryEmployeeView(listModel: listModel)
+                .frame(width:105)
         }
     }
 }
@@ -32,35 +30,44 @@ struct AvatarView: View {
     var stringUrl: String
     var body: some View {
         if let url = URL(string: stringUrl) {
-            AsyncImage(url: url) { image in
-                image.resizable()
-                    .frame(maxWidth: 36, maxHeight: 36)
-            } placeholder: {
-                ProgressView()
-                    .frame(maxWidth: 36, maxHeight: 36)
+            AsyncImage(url: url) { phase in
+                switch phase {
+                case .empty:
+                    ProgressView()
+                        .frame(maxWidth: 36, maxHeight: 36)
+                case .success(let image):
+                    image.resizable()
+                        .frame(maxWidth: 36, maxHeight: 36)
+                case .failure:
+                    Image(systemName: "photo")
+                        .frame(maxWidth: 36, maxHeight: 36)
+                @unknown default:
+                    EmptyView()
+                        .frame(maxWidth: 36, maxHeight: 36)
+                }
             }
         }else {
             Image(systemName: "photo")
                 .frame(maxWidth: 36, maxHeight: 36)
         }
     }
-    
 }
 //MARK: - InformationEmployeeView
 struct InformationEmployeeView : View {
     var listModel : ListModel
     var body: some View {
-        VStack(alignment: .listRowSeparatorLeading) {
+        VStack(alignment: .listRowSeparatorLeading,spacing:2) {
             Text(listModel.employee.fullname)
                 .truncationMode(.tail)
                 .lineLimit(1)
                 .foregroundColor(.black)
+                .font(.makeSF(size: 15, fontType: .regular))
             Text(listModel.employee.categoryTitle)
                 .foregroundColor(.gray)
                 .truncationMode(.tail)
                 .lineLimit(1)
+                .font(.makeSF(size: 13, fontType: .regular))
         }
-//        .frame(maxWidth: 150)
     }
 }
 //MARK: - SalaryEmployeeView
@@ -76,6 +83,7 @@ struct SalaryEmployeeView: View {
                             makeTextBalance(from: listModel.balance)
                             Text("Переплата: \(overPayment)".addRubleSign())
                                 .foregroundColor(.red)
+                                .font(.makeSF(size: 13, fontType: .regular))
                         }
                     }else {
                         Text("").opacity(0)
@@ -85,8 +93,8 @@ struct SalaryEmployeeView: View {
                 }
             }else {
                 Text("Нет схемы зарплаты")
-                    .foregroundColor(.red)
-                    .font(.system(size: 13))
+                    .foregroundColor(.orange)
+                    .font(.makeSF(size: 13, fontType: .regular))
             }
         }
     }
@@ -96,9 +104,11 @@ struct SalaryEmployeeView: View {
             return Text("Ошибка баланса").foregroundColor(.green)
         }
         if number >= 0 {
-            return Text("\(number)".addRubleSign()).foregroundColor(Color.purpleBackground)
+            return Text("\(number)".makeThousand().addRubleSign()).foregroundColor(Color.purpleBackground)
+                .font(.makeSF(size: 15, fontType: .regular))
         }else {
-            return Text("\(number)".addRubleSign()).foregroundColor(.red)
+            return Text("\(number)".makeThousand().addRubleSign()).foregroundColor(.red)
+                .font(.makeSF(size: 15, fontType: .regular))
         }
         
     }

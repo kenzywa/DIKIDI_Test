@@ -12,16 +12,19 @@ extension String {
         self + " ₽"
     }
     
-    func separateThousand() -> String? {
+    func makeThousand() -> String {
         let formatter = NumberFormatter()
         formatter.numberStyle = .decimal
-        formatter.groupingSeparator = " " // Используем пробел для разделения тысяч
-//        formatter.minimumFractionDigits = 2
-//        formatter.maximumFractionDigits = 2
+        formatter.groupingSeparator = " "
+        formatter.decimalSeparator = "."
+        formatter.minimumFractionDigits = contains(".") ? 2 : 0
+        formatter.maximumFractionDigits = 2
         
-        if let number = formatter.number(from: self) {
-            return formatter.string(from: number)
+        
+        if let number = Double(self.replacingOccurrences(of: ",", with: ".")) {
+            return formatter.string(from: NSNumber(value: number)) ?? self
         }
-        return nil
+        
+        return self
     }
 }

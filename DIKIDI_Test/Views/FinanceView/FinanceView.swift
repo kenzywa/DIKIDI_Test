@@ -22,11 +22,11 @@ struct FinanceView: View {
     @State private var periods: [String] = ["За месяц","За год"]
     
     var body: some View {
-        NavigationView {
+        NavigationStack {
             ZStack {
                 BackgroundGradientView().ignoresSafeArea(.all)
-                VStack(alignment: .leading) {
-                    TipView(isShowTip: $isShowTip)
+                VStack(alignment: .center) {
+                        TipView(isShowTip: $isShowTip)
                     //MARK: - DataPicker
                     PickersView()
                         .frame(maxWidth: 374,maxHeight: 44)
@@ -37,33 +37,35 @@ struct FinanceView: View {
                         .padding(10)
                     SectionView()
                         .frame(maxWidth: 374,maxHeight: 20)
+                        .padding(.trailing)
                     //MARK: - List
+                    VStack {
                         List(salaryViewModel.list) { listModel in
                             NavigationLink(destination: EmployeeDetailView(listModel: listModel)) {
-                                EmployeeCell(listModel: listModel)
+                                EmployeeCell(listModel: listModel).frame(height:44)
                                     .swipeActions(edge: .trailing) {
                                         SwipeEmployeeView()
                                     }
-                                    .listRowSeparator(.hidden)
+                                
                             }
+                            .listRowSeparator(.hidden)
                         }
-                        
-                        .listStyle(.sidebar)
-                        .scrollContentBackground(.hidden)
+                        .listStyle(.plain)
                         .onAppear() {
                             Task {
                                 await salaryViewModel.fetchData()
                             }
                         }
-                        .frame(maxWidth:400,maxHeight: 415)
+                    }
+                    .clipShape(RoundedRectangle(cornerRadius: 10))
+                    .padding(.horizontal,20)
+                    .frame(maxHeight: 415)
                 }
             }
         }
-//        .toolbarBackground(.hidden, for: .navigationBar)
         .sheet(isPresented: $isPresentedSettings) {
             SettingsView()
         }
-
         .toolbar {
             //MARK: - NavigationBar
             ToolbarItem(placement: .topBarTrailing) {
@@ -72,6 +74,11 @@ struct FinanceView: View {
                         ForEach(pickerTitles,id: \.self) { name in
                             Text(name)
                         }
+                    }
+                    .onAppear {
+                        UISegmentedControl.appearance().selectedSegmentTintColor = .white.withAlphaComponent(0.5)
+                        UISegmentedControl.appearance().setTitleTextAttributes([.foregroundColor: UIColor.white], for: .selected)
+                        UISegmentedControl.appearance().setTitleTextAttributes([.foregroundColor: UIColor.white], for: .normal)
                     }
                     .pickerStyle(.segmented)
                     
@@ -106,15 +113,16 @@ struct SectionView : View {
     var body: some View {
         HStack {
             Text("Сотрудники".uppercased())
-                .foregroundColor(.white.opacity(0.6))
+                .foregroundColor(.white.opacity(0.5))
+                .font(.makeSF(size: 13, fontType: .regular))
             
             Spacer()
             
-//            Picker("", systemImage: "line.3.horizontal.decrease.circle", selection: $sortType) {
-//                ForEach(SortType.allCases,id: \.self) { sortType in
-//                    Text(sortType.rawValue).font(.system(size: 17))
-//                }
-//            }
+            //            Picker("", systemImage: "line.3.horizontal.decrease.circle", selection: $sortType) {
+            //                ForEach(SortType.allCases,id: \.self) { sortType in
+            //                    Text(sortType.rawValue).font(.system(size: 17))
+            //                }
+            //            }
             
             Button {
                 print("sort")

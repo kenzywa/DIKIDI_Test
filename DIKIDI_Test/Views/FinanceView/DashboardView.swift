@@ -19,7 +19,7 @@ struct DashboardView: View {
         .frame(maxWidth:.infinity,maxHeight: .infinity)
         .foregroundColor(.white)
         .background {
-            BackgroundSalaryGradientView()
+            Image("balance_bg")
 //                .blur(radius: 5).opacity(0.5)
         }
         .onAppear() {
@@ -39,15 +39,15 @@ struct BalanceView : View {
             Text("Остаток")
                 .font(.makeSF(size: 17, fontType: .regular))
             if let text = dashboardViewModel.dashboardModel?.data.balance {
-                Text(text.addRubleSign())
+                Text(text.makeThousand().addRubleSign())
                     .font(.makeSF(size: 30, fontType: .bold))
             }else {
                 Text("")
             }
             
             HStack {
-                DashedUnderlineText(text: "К выплате:")
-                Text("100 340.00".addRubleSign())
+                DashedUnderlineText(text: "К выплате:",color: .white.opacity(0.5))
+                Text("100 340.00".makeThousand().addRubleSign()).foregroundColor(.white.opacity(0.5))
                 Spacer()
             }
             .font(.makeSF(size: 13, fontType: .regular))
@@ -58,7 +58,7 @@ struct BalanceView : View {
 
 struct OverPayView : View {
     var body: some View {
-        VStack {
+        VStack(alignment: .center,spacing: 5) {
             HStack {
                 Text("Переплата")
                     .font(.makeSF(size: 17, fontType: .regular))
@@ -71,14 +71,16 @@ struct OverPayView : View {
             .frame(maxWidth:.infinity,maxHeight: .infinity)
             
             HStack {
-                Text("5 000.00".addRubleSign()).font(.makeSF(size: 20, fontType: .bold))
+                Text("5 000.00".makeThousand().addRubleSign())
+                    .font(.makeSF(size: 20, fontType: .bold))
                 Spacer()
             }
             .frame(maxWidth:.infinity,maxHeight: .infinity)
             
             HStack {
-                DashedUnderlineText(text: "К удеражнию:")
-                Text("100 340.00".addRubleSign())
+                DashedUnderlineText(text: "К удержанию:",color: .white.opacity(0.5))
+                Text("100340.00".makeThousand().addRubleSign())
+                    .foregroundColor(.white.opacity(0.5))
                 Spacer()
             }
             .font(.makeSF(size: 13, fontType: .regular))
@@ -100,12 +102,14 @@ struct BackgroundSalaryGradientView: View {
 
 struct DashedUnderlineText: View {
     var text: String
+    var color: Color
     var body: some View {
         Text(text)
+            .foregroundColor(color)
             .background(
                 DashedUnderline()
                     .stroke(style: StrokeStyle(lineWidth: 1, dash: [2, 1]))
-                    .foregroundColor(.white)
+                    .foregroundColor(color)
                     .offset(y: 1)
             )
     }
