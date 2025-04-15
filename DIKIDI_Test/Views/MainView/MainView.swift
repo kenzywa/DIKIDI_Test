@@ -10,8 +10,9 @@ import SwiftUI
 struct MainView: View {
     var body: some View {
         NavigationView {
-            NavigationLink("Перейти на тестовый экран", destination: FinanceView().toolbarRole(.editor))
-                .foregroundColor(.black)
+                NavigationLink("Перейти на тестовый экран", destination: FinanceView())
+                    .foregroundColor(.black)
+                    .font(.makeSF(size: 20, fontType: .bold))
         }
         .accentColor(.white)
     }

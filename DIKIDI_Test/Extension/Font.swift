@@ -15,8 +15,6 @@ extension Font {
     
     
     static func makeSF(size: CGFloat,fontType : FontType) -> Font {
-        let name = "SFProText-\(fontType.rawValue)"
-        print(name)
-        return Font.custom(name, size: size)
+        return Font.custom("SFProText-\(fontType.rawValue)", size: size)
     }
 }

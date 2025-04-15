@@ -10,7 +10,11 @@ import SwiftUI
 struct EmployeeDetailView: View {
     var listModel : ListModel
     var body: some View {
-        Text(listModel.employee.fullname)
+        VStack {
+            Text(listModel.employee.fullname)
+        }
+        .navigationTitle("Сотрудник")
+        .navigationBarTitleDisplayMode(.inline)
     }
 }
 

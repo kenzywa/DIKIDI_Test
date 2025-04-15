@@ -16,12 +16,13 @@ struct FinanceView: View {
     
     
     @State var isShowTip: Bool = false
+    @State var isPresentedSettings = false
     
     @State private var pickerTitles: [String] = ["Остаток","Расчёты","Операции"]
     @State private var periods: [String] = ["За месяц","За год"]
     
     var body: some View {
-        NavigationStack{
+        NavigationView {
             ZStack {
                 BackgroundGradientView().ignoresSafeArea(.all)
                 VStack(alignment: .leading) {
@@ -29,6 +30,7 @@ struct FinanceView: View {
                     //MARK: - DataPicker
                     PickersView()
                         .frame(maxWidth: 374,maxHeight: 44)
+                        .padding(.horizontal)
                     //MARK: - Dashboard
                     DashboardView()
                         .frame(maxWidth: 374,maxHeight: 180)
@@ -37,11 +39,13 @@ struct FinanceView: View {
                         .frame(maxWidth: 374,maxHeight: 20)
                     //MARK: - List
                         List(salaryViewModel.list) { listModel in
-                            EmployeeCell(listModel: listModel)
-                                .swipeActions(edge: .trailing) {
-                                    SwipeEmployeeView()
-                                }
-                                .listRowSeparator(.hidden)
+                            NavigationLink(destination: EmployeeDetailView(listModel: listModel)) {
+                                EmployeeCell(listModel: listModel)
+                                    .swipeActions(edge: .trailing) {
+                                        SwipeEmployeeView()
+                                    }
+                                    .listRowSeparator(.hidden)
+                            }
                         }
                         
                         .listStyle(.sidebar)
@@ -55,7 +59,11 @@ struct FinanceView: View {
                 }
             }
         }
-        .toolbarBackground(.hidden, for: .navigationBar)
+//        .toolbarBackground(.hidden, for: .navigationBar)
+        .sheet(isPresented: $isPresentedSettings) {
+            SettingsView()
+        }
+
         .toolbar {
             //MARK: - NavigationBar
             ToolbarItem(placement: .topBarTrailing) {
@@ -74,8 +82,10 @@ struct FinanceView: View {
                         Image(systemName: "questionmark.circle")
                     }
                     
-                    NavigationLink(destination: SettingsView()) {
-                        Image(systemName: "gearshape")
+                    Button(action: {
+                        isPresentedSettings = true
+                    }) {
+                        Image(systemName: "questionmark.circle")
                     }
                 }
             }
@@ -149,10 +159,8 @@ struct PickersView : View {
                 }
             }
             .pickerStyle(.menu)
-            .frame(maxWidth: .infinity)
+            .frame(width: 200)
             
-            
-            //            Spacer()
             
             DatePicker("", selection: $selectedDate, displayedComponents: .date)
                 .pickerStyle(.automatic)
@@ -173,7 +181,6 @@ struct PickersView : View {
 
 
 //MARK: - Background Gradient
-
 struct BackgroundGradientView : View {
     var body: some View {
         Rectangle().fill( LinearGradient(stops: [

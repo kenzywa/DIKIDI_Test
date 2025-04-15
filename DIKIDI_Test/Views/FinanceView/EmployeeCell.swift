@@ -10,17 +10,20 @@ import SwiftUI
 struct EmployeeCell: View {
     let listModel: ListModel
     var body: some View {
-        HStack(alignment:.center){
-            HStack(alignment:.center,spacing: 10) {
-                AvatarView(stringUrl: listModel.employee.icon)
-                    .clipShape(RoundedRectangle(cornerRadius: 6))
-                    .frame(maxWidth: 36, maxHeight: 36)
-                InformationEmployeeView(listModel: listModel)
-            }
-//            Spacer()
+        HStack(alignment:.center) {
+            AvatarView(stringUrl: listModel.employee.icon)
+                .clipShape(RoundedRectangle(cornerRadius: 6))
+                .frame(width:36,height:36)
+                .padding(5)
+            InformationEmployeeView(listModel: listModel)
+                .layoutPriority(1)
             
-            SalaryEmployeeView(listModel: listModel)
+            Spacer(minLength: 0)
+            VStack(alignment:.trailing) {
+                SalaryEmployeeView(listModel: listModel)
+                    .frame(width:100)
             }
+        }
     }
 }
 
@@ -31,14 +34,17 @@ struct AvatarView: View {
         if let url = URL(string: stringUrl) {
             AsyncImage(url: url) { image in
                 image.resizable()
+                    .frame(maxWidth: 36, maxHeight: 36)
             } placeholder: {
                 ProgressView()
+                    .frame(maxWidth: 36, maxHeight: 36)
             }
         }else {
             Image(systemName: "photo")
+                .frame(maxWidth: 36, maxHeight: 36)
         }
     }
-       
+    
 }
 //MARK: - InformationEmployeeView
 struct InformationEmployeeView : View {
@@ -54,7 +60,7 @@ struct InformationEmployeeView : View {
                 .truncationMode(.tail)
                 .lineLimit(1)
         }
-        .frame(maxWidth: 130)
+//        .frame(maxWidth: 150)
     }
 }
 //MARK: - SalaryEmployeeView
@@ -71,12 +77,14 @@ struct SalaryEmployeeView: View {
                             Text("Переплата: \(overPayment)".addRubleSign())
                                 .foregroundColor(.red)
                         }
+                    }else {
+                        Text("").opacity(0)
                     }
                 }else {
                     makeTextBalance(from: listModel.balance)
                 }
             }else {
-               Text("Нет схемы оплаты")
+                Text("Нет схемы зарплаты")
                     .foregroundColor(.red)
                     .font(.system(size: 13))
             }
