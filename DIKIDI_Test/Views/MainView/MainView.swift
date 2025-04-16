@@ -9,7 +9,7 @@ import SwiftUI
 
 struct MainView: View {
     var body: some View {
-        NavigationView {
+        NavigationStack {
                 NavigationLink("Перейти на тестовый экран", destination: FinanceView())
                     .foregroundColor(.black)
                     .font(.makeSF(size: 20, fontType: .bold))

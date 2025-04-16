@@ -10,11 +10,13 @@ import SwiftUI
 struct EmployeeDetailView: View {
     var listModel : ListModel
     var body: some View {
-        VStack {
+        ZStack {
+            Color.whiteBackground
             Text(listModel.employee.fullname)
         }
         .navigationTitle("Сотрудник")
         .navigationBarTitleDisplayMode(.inline)
+        .navigationBarBackButtonHidden(false)
     }
 }
 

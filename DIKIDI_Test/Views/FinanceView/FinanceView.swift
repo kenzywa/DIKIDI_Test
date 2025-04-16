@@ -22,14 +22,13 @@ struct FinanceView: View {
     @State private var periods: [String] = ["За месяц","За год"]
     
     var body: some View {
-        NavigationStack {
             ZStack {
                 BackgroundGradientView().ignoresSafeArea(.all)
                 VStack(alignment: .center) {
                         TipView(isShowTip: $isShowTip)
                     //MARK: - DataPicker
-                    PickersView()
-                        .frame(maxWidth: 374,maxHeight: 44)
+                    PickerView()
+                        .frame(width:374,height: 54)
                         .padding(.horizontal)
                     //MARK: - Dashboard
                     DashboardView()
@@ -62,7 +61,6 @@ struct FinanceView: View {
                     .frame(maxHeight: 415)
                 }
             }
-        }
         .sheet(isPresented: $isPresentedSettings) {
             SettingsView()
         }
@@ -81,6 +79,7 @@ struct FinanceView: View {
                         UISegmentedControl.appearance().setTitleTextAttributes([.foregroundColor: UIColor.white], for: .normal)
                     }
                     .pickerStyle(.segmented)
+                    .frame(maxWidth: 240)
                     
                     
                     Button(action: {
@@ -92,7 +91,7 @@ struct FinanceView: View {
                     Button(action: {
                         isPresentedSettings = true
                     }) {
-                        Image(systemName: "questionmark.circle")
+                        Image(systemName: "gearshape")
                     }
                 }
             }
@@ -113,7 +112,7 @@ struct SectionView : View {
     var body: some View {
         HStack {
             Text("Сотрудники".uppercased())
-                .foregroundColor(.white.opacity(0.5))
+                .foregroundColor(.white.opacity(0.8))
                 .font(.makeSF(size: 13, fontType: .regular))
             
             Spacer()
@@ -154,34 +153,41 @@ struct TipView : View {
     }
 }
 
-struct PickersView : View {
+struct PickerView : View {
     @State private var pickerDates : [String] = ["На текущий момент", "К дате", "За период"]
     @State var selectedDateOnPicker: String = "На текущий момент"
     @State private var selectedDate = Date()
     var body : some View {
-        HStack() {
-            
+        
+        HStack(alignment: .center) {
+            VStack(alignment: .leading) {
             Picker("", selection: $selectedDateOnPicker) {
                 ForEach(pickerDates,id: \.self) { name in
                     Text(name).font(.system(size: 17))
                 }
             }
             .pickerStyle(.menu)
-            .frame(width: 200)
+            .frame(width:250,height: 44)
+            }
             
+            Spacer()
             
-            DatePicker("", selection: $selectedDate, displayedComponents: .date)
-                .pickerStyle(.automatic)
+            Text(formattedDate(Date()))
                 .foregroundColor(.white)
-                .background(.clear)
-                .environment(\.locale, Locale.current)
+                .padding(.trailing,5)
+            
+            Spacer(minLength: 5)
         }
+        .background {
+            RoundedRectangle(cornerRadius: 10).fill(.white.opacity(0.3))
+        }
+        .frame(maxWidth: .infinity,maxHeight: .infinity)
     }
     
     func formattedDate(_ date: Date) -> String {
         let formatter = DateFormatter()
-        formatter.locale = Locale(identifier: "ru_RU") // Русская локаль
-        formatter.dateFormat = "d MMMM" // Без года
+        formatter.locale = Locale(identifier: "ru_RU")
+        formatter.dateFormat = "d MMMM"
         return formatter.string(from: date)
     }
 }
@@ -192,8 +198,8 @@ struct PickersView : View {
 struct BackgroundGradientView : View {
     var body: some View {
         Rectangle().fill( LinearGradient(stops: [
-            .init(color: Color.purpleBackground, location: 0.0),
-            .init(color: Color.whiteBackground, location: 0.7)],
+            .init(color: Color.blueBackground, location: 0.0),
+            .init(color: Color.whiteBackground, location: 0.8)],
                                          startPoint: UnitPoint(x: 0, y: 0), endPoint: UnitPoint(x: 1, y: 1)))
         
     }

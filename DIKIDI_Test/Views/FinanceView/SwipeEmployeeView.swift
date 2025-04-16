@@ -26,15 +26,25 @@ struct SwipeEmployeeView: View {
         HStack {
             ForEach(actionButtons) { actionButton in
                 Button {
-                    print(actionButton.tag)
+                    switch actionButton.tag {
+                    case 0 :
+                        print("next")
+                    case 1:
+                        print("delete")
+                    case 2:
+                        print("add")
+                    case 3:
+                        print("fix")
+                    default:
+                        print("default")
+                    }
                 } label: {
                     Image(systemName: actionButton.systemImage)
-                        
+                    
                 }
-                .padding(10)
-                .tint(.purpleBackground)
+                .tint(.blueBackground)
                 .foregroundColor(.white)
-                .border(.white, width: 1)
+                .frame(maxWidth: 22)
             }
         }
     }

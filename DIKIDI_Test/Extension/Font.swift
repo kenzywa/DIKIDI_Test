@@ -13,7 +13,6 @@ extension Font {
         case regular = "Regular"
     }
     
-    
     static func makeSF(size: CGFloat,fontType : FontType) -> Font {
         return Font.custom("SFProText-\(fontType.rawValue)", size: size)
     }

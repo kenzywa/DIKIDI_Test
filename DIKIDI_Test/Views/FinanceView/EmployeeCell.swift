@@ -104,10 +104,12 @@ struct SalaryEmployeeView: View {
             return Text("Ошибка баланса").foregroundColor(.green)
         }
         if number >= 0 {
-            return Text("\(number)".makeThousand().addRubleSign()).foregroundColor(Color.purpleBackground)
+            return Text("\(number)".makeThousand().addRubleSign())
+                .foregroundColor(Color.blueBackground)
                 .font(.makeSF(size: 15, fontType: .regular))
         }else {
-            return Text("\(number)".makeThousand().addRubleSign()).foregroundColor(.red)
+            return Text("\(number)".makeThousand().addRubleSign())
+                .foregroundColor(.red)
                 .font(.makeSF(size: 15, fontType: .regular))
         }
         

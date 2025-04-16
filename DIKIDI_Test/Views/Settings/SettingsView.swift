@@ -9,7 +9,10 @@ import SwiftUI
 
 struct SettingsView: View {
     var body: some View {
-        Text("Screen of settings")
+        ZStack {
+            Color.whiteBackground.ignoresSafeArea(.all)
+            Text("Screen of settings").foregroundColor(.black)
+        }
     }
 }
 

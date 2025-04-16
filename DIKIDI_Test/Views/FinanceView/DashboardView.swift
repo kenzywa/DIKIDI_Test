@@ -20,7 +20,6 @@ struct DashboardView: View {
         .foregroundColor(.white)
         .background {
             Image("balance_bg")
-//                .blur(radius: 5).opacity(0.5)
         }
         .onAppear() {
             Task {
@@ -47,7 +46,8 @@ struct BalanceView : View {
             
             HStack {
                 DashedUnderlineText(text: "К выплате:",color: .white.opacity(0.5))
-                Text("100 340.00".makeThousand().addRubleSign()).foregroundColor(.white.opacity(0.5))
+                Text("100 340.00".makeThousand().addRubleSign())
+                    .foregroundColor(.white.opacity(0.5))
                 Spacer()
             }
             .font(.makeSF(size: 13, fontType: .regular))
@@ -93,10 +93,11 @@ struct OverPayView : View {
 struct BackgroundSalaryGradientView: View {
     var body: some View {
         RoundedRectangle(cornerRadius: 10).fill(LinearGradient(stops: [
-            .init(color: Color.firstGradientColor, location: 0.0),
-            .init(color: Color.purpleBackground, location: 0.2),
-            .init(color: Color.lastGradientColor, location: 1.0)],
-                                                               startPoint: UnitPoint(x: 0, y: 1), endPoint: UnitPoint(x: 1, y: 0)))
+            .init(color: Color.skyBackground, location: 0.0),
+            .init(color: Color.blueBackground, location: 0.2),
+            .init(color: Color.purpleBackground, location: 1.0)],
+                                                               startPoint: UnitPoint(x: 0, y: 1),
+                                                               endPoint: UnitPoint(x: 1, y: 0)))
     }
 }
 
